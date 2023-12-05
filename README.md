@@ -1,3 +1,66 @@
+
+
+# California Calling 项目
+
+这个项目，“California Calling”，是一个致力于关心2018年加利福尼亚山火受灾社区的设计倡议。该项目展示了一些定制设计，包括T恤、徽章和海报，这些设计灵感来自那些受到毁灭性山火影响的社区的韧性。
+
+## 目录
+
+- [概览](#概览)
+- [项目结构](#项目结构)
+- [使用方法](#使用方法)
+- [样式表](#样式表)
+- [贡献](#贡献)
+- [许可证](#许可证)
+
+## 概览
+
+该项目由HTML和SCSS文件组成，创建了一个视觉上吸引人且信息丰富的网站。网站的主要部分包括一个带有主导部分的页眉，一个简介，关于山火的额外信息，一个照片库以及展示定制设计的文章。
+
+## 项目结构
+
+项目目录结构如下：
+
+- `assets/`：包含项目中使用的图像、字体和其他资源。
+- `scss/`：保存SCSS文件，包括用于字体、颜色、混合、按钮和关键帧的部分文件。
+- `README.md`：您当前正在阅读的文档文件。
+- `index.html`：网站的主HTML文件。
+- `style.css`：从SCSS文件生成的编译CSS文件。
+
+## 使用方法
+
+要使用该项目，只需克隆存储库并在Web浏览器中打开`index.html`文件。该网站被设计为响应式，并提供有关2018年加利福尼亚山火以及为此创建的定制设计的信息。
+
+## 样式表
+
+该项目使用SCSS来管理样式。主要的SCSS文件是`main.scss`，它导入了用于字体、颜色、混合、按钮和关键帧的部分文件。编译的`style.css`已包含在项目中以便使用。
+
+## 贡献
+
+如果您想为该项目做贡献，请按照以下步骤操作：
+
+1. 分叉存储库。
+2. 为您的功能或错误修复创建一个新分支。
+3. 进行更改并使用描述性消息进行提交。
+4. 推送更改到您的分叉。
+5. 向主存储库提交拉取请求。
+
+## 许可证
+
+该项目根据 [MIT许可证](LICENSE) 授权，这意味着您可以自由使用、修改和分发代码。
+
+随时探索并为California Calling项目做出贡献！
+
+---
+
+*设计师：* Farhad Amini  
+*开发者：* Farhad Amini（[SupeCode.de](https://www.supecode.de/)的Bootcamp参与者）  
+*由教练指导：* Farid 和 Magda
+
+
+---
+---
+
 # California Calling Project
 
 Dieses Projekt, "California Calling", ist eine Designinitiative, die den Gemeinden gewidmet ist, die von den Waldbränden in Kalifornien im Jahr 2018 betroffen sind. Das Projekt präsentiert individuelle Designs, einschließlich T-Shirts, Pins und Poster, inspiriert von der Widerstandsfähigkeit der von den verheerenden Waldbränden betroffenen Gemeinden.
@@ -157,59 +220,4 @@ Feel free to explore and contribute to the California Calling project!
 ---
 ---
 
-# California Calling 项目
 
-这个项目，“California Calling”，是一个致力于关心2018年加利福尼亚山火受灾社区的设计倡议。该项目展示了一些定制设计，包括T恤、徽章和海报，这些设计灵感来自那些受到毁灭性山火影响的社区的韧性。
-
-## 目录
-
-- [概览](#概览)
-- [项目结构](#项目结构)
-- [使用方法](#使用方法)
-- [样式表](#样式表)
-- [贡献](#贡献)
-- [许可证](#许可证)
-
-## 概览
-
-该项目由HTML和SCSS文件组成，创建了一个视觉上吸引人且信息丰富的网站。网站的主要部分包括一个带有主导部分的页眉，一个简介，关于山火的额外信息，一个照片库以及展示定制设计的文章。
-
-## 项目结构
-
-项目目录结构如下：
-
-- `assets/`：包含项目中使用的图像、字体和其他资源。
-- `scss/`：保存SCSS文件，包括用于字体、颜色、混合、按钮和关键帧的部分文件。
-- `README.md`：您当前正在阅读的文档文件。
-- `index.html`：网站的主HTML文件。
-- `style.css`：从SCSS文件生成的编译CSS文件。
-
-## 使用方法
-
-要使用该项目，只需克隆存储库并在Web浏览器中打开`index.html`文件。该网站被设计为响应式，并提供有关2018年加利福尼亚山火以及为此创建的定制设计的信息。
-
-## 样式表
-
-该项目使用SCSS来管理样式。主要的SCSS文件是`main.scss`，它导入了用于字体、颜色、混合、按钮和关键帧的部分文件。编译的`style.css`已包含在项目中以便使用。
-
-## 贡献
-
-如果您想为该项目做贡献，请按照以下步骤操作：
-
-1. 分叉存储库。
-2. 为您的功能或错误修复创建一个新分支。
-3. 进行更改并使用描述性消息进行提交。
-4. 推送更改到您的分叉。
-5. 向主存储库提交拉取请求。
-
-## 许可证
-
-该项目根据 [MIT许可证](LICENSE) 授权，这意味着您可以自由使用、修改和分发代码。
-
-随时探索并为California Calling项目做出贡献！
-
----
-
-*设计师：* Farhad Amini  
-*开发者：* Farhad Amini（[SupeCode.de](https://www.supecode.de/)的Bootcamp参与者）  
-*由教练指导：* Farid 和 Magda
