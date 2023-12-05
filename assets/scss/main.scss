@@ -1,37 +1,352 @@
+@use "_fonts.scss" as *;
+@use "_colors" as *;
+@use "_mixin" as *;
+@use "_buttons" as *;
+@use "_keyframes" as *;
 
-@use '_variables' as variables; 
-@use '_mixin' as mixins;
-@use '_color' as color;
-@use '_font' as fonts;
+// global settings
+html {
+    scroll-behavior: smooth;
+}
 
-
-/* ========== GLOBAL STYLES ========== */
-
-*{
-    margin: 0;
+* {
     padding: 0;
-    font-weight: 900;
-    text-decoration: none;
-}
-p {
-  font-family: fonts.$worksans;
-  color: color.$textfarbe;
-}
-h4, h1 {
-  font-family: fonts.$inter;
-  color: color.$textfarbe;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.sec1__story, header, footer {
-    background-color: variables.$hauptfarbe;
+// start header with hero and navigation
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-dark;
+    @include flexColumn;
+    justify-content: space-between;
+
+    .hero {
+        .line {
+            width: 1px;
+            height: 20vh;
+            background-color: $main-hell;
+            margin-bottom: 5%;
+        }
+
+        @include flexColumn;
+        gap: 5px;
+        margin: 0 auto;
+        align-items: center;
+
+
+        h1 {
+            @include fontstyle($fontMain, 7rem, $main-hell, 70%);
+            text-align: center;
+            line-height: 6rem;
+        }
+
+        p {
+            @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
+            text-align: center;
+        }
+
+        span {
+            @include textBorderHell;
+
+        }
+    }
+
+    nav {
+        @include flexRow;
+        justify-content: space-between;
+        padding: 5% 5%;
+    }
 }
 
-.article, .sec1__story, header, footer  {
-  @include mixins.textStyle(2em, #ffffff, black);
-  @include mixins.disflex(flex, center, center);
+// end header
+
+// section intro
+.intro {
+    background-color: $main-dark;
+    width: 100vw;
+    padding: 5%;
+
+    h2 {
+        @include fontstyle($fontMain, 6rem, $main-hell, 80%);
+    }
 }
 
+// end section intro
 
+// section more infos
+.more {
+    width: 100vw;
+    background-color: $main-dark;
+    padding: 0 5%;
+    @include flexRow;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10%;
+    padding-bottom: 5%;
 
+    .facts {
+        h2 {
+            @include fontstyle($fontMain, 6rem, $main-hell, 80%);
+            padding-bottom: 2%;
+        }
 
+        p {
+            @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
+        }
+    }
 
+    img {
+        width: 30%;
+        height: auto;
+    }
+
+}
+
+// edn section more infos
+
+// start section fotos
+.fotos {
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    background-color: $main-hell;
+
+    h2 {
+        @include fontstyle($fontMain, 5rem, $main-dark, 100%)
+    }
+
+    p {
+        @include fontstyle($fontSecond, 1rem, $main-dark, 80%)
+    }
+
+    .mainText {
+        @include imgPositionAbsolute(20%, auto, auto, 30%, 40%);
+    }
+
+    .secondText {
+        @include imgPositionAbsolute(70%, auto, auto, 35%, 25%);
+    }
+
+    .img1 {
+        @include imgPositionAbsolute(-5%, 10%, auto, auto, 22%);
+    }
+
+    .img2 {
+        @include imgPositionAbsolute(8%, auto, auto, 8%, 20%);
+    }
+
+    .img3 {
+        @include imgPositionAbsolute(30%, 0, auto, auto, 15%);
+    }
+
+    .img4 {
+        @include imgPositionAbsolute(45%, auto, auto, 25%, 18%);
+    }
+
+    .img5 {
+        @include imgPositionAbsolute(50%, 30%, auto, auto, 18%);
+    }
+
+    .img6 {
+        @include imgPositionAbsolute(auto, auto, 20%, 0, 15%);
+    }
+
+    .img7 {
+        @include imgPositionAbsolute(auto, 15%, -3%, auto, 25%);
+    }
+
+}
+
+// end section fotos
+
+// start first article
+.article01 {
+    width: 100vw;
+    height: 175vh;
+    background-color: $main-dark;
+
+    .articleText {
+        @include flexRow;
+        justify-content: space-between;
+        gap: 30%;
+        padding: 5%;
+
+        h3 {
+            @include fontstyle($fontMain, 5rem, $main-hell, 100%);
+            line-height: 4.4rem;
+        }
+
+        p:first-of-type {
+            @include fontstyle($fontSecond, 1.5rem, $main-hell, 80%);
+            font-weight: 700;
+        }
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 1rem, $main-hell, 100%);
+            padding-top: 2%;
+        }
+    }
+
+    .articlePhotos {
+        height: 90vh;
+        position: relative;
+        z-index: 1;
+
+        img:first-of-type {
+            @include imgPositionAbsolute(10%, auto, auto, 5%, 55%);
+        }
+
+        img:last-of-type {
+            @include imgPositionAbsolute(25%, 15%, auto, auto, 30%);
+        }
+    }
+
+    // start the animation section
+    .animation {
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+        top: -10%;
+        // width: 100vw;
+        height: 60vh;
+        padding: 0 0;
+
+        img {
+            @include imgPositionAbsolute(-30%, 5%, auto, auto, 35%);
+            animation: rotate 5s linear infinite;
+            overflow: hidden;
+
+        }
+
+    }
+
+    // end the animation section 
+
+}
+
+// end first article
+
+// start second article
+
+.article02 {
+    width: 100vw;
+    height: 150vh;
+    background-color: $accent-hell;
+    padding: 5%;
+
+    .articleText {
+        @include flexRow;
+        justify-content: space-between;
+        gap: 30%;
+
+        h3 {
+            @include fontstyle($fontMain, 5rem, $main-dark, 100%);
+            line-height: 4.4rem;
+        }
+
+        p:first-of-type {
+            @include fontstyle($fontSecond, 1.5rem, $main-dark, 80%);
+            font-weight: 700;
+        }
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 1rem, $main-dark, 100%);
+            padding-top: 2%;
+        }
+    }
+
+    .articlePhotos {
+        height: 100vh;
+        position: relative;
+
+        img:first-of-type {
+            @include imgPositionAbsolute(10%, 5%, auto, auto, 55%);
+        }
+
+        img:last-of-type {
+            @include imgPositionAbsolute(25%, auto, auto, 15%, 30%);
+        }
+    }
+
+}
+
+// end second article
+
+// start CSS footer
+
+footer {
+    position: relative;
+    height: 80vh;
+    background-color: $main-dark;
+    padding: 5% 5%;
+    overflow: hidden;
+
+    p {
+        @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
+    }
+
+    .joinUs {
+        padding: 5% 0;
+        @include flexColumn;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: flex-start;
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 2rem, $main-hell, 40%);
+        }
+    }
+
+    .copyright {
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            @include flexColumn;
+            gap: 15px;
+
+            p {
+                max-width: 100%;
+            }
+
+            .icons {
+                @include flexRow;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5%;
+
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .parteners {
+        img {
+            height: 50px;
+            padding: 2%;
+        }
+    }
+
+    .banner {
+        position: absolute;
+        right: 30%;
+        width: 100vw;
+        background-color: $accent-hell;
+        transform: translate(45%, 60%) rotate(45deg);
+
+        h3 {
+            @include fontstyle($fontMain, 3rem, $accent-dark, 100%);
+            animation: movebanner 10s linear infinite;
+        }
+
+        span {
+            @include textBorderDark;
+        }
+    }
+}
