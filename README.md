@@ -56,6 +56,8 @@ Erkunden Sie das California Calling-Projekt und tragen Sie dazu bei!
 **Designer, Entwickler und Bootcamp-Teilnehmer: Farhad Amini**
 **In Zusammenarbeit mit [SupeCode.de](https://www.supecode.de/) und Bootcamp-Teilnehmern unter der Leitung der Coaches Farid und Magda.**
 
+---
+---
 
 # California Calling Project
 
@@ -114,7 +116,8 @@ Feel free to explore and contribute to the California Calling project!
 *Developer:* Farhad Amini (Bootcamp participant at [SupeCode.de](https://www.supecode.de/))  
 *Guided by Coaches:* Farid and Magda
 
-
+---
+---
 
 # پروژه California Calling
 
@@ -151,6 +154,8 @@ Feel free to explore and contribute to the California Calling project!
 
 پروژه از SCSS برای مدیریت استایل‌ها استفاده می‌کند. فایل اصلی SCSS `main.scss`
 
+---
+---
 
 # California Calling 项目
 
