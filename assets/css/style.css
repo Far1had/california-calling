@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-SemiBold.ttf");
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
 }
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
 }
 button {
   font-family: "WorkSans";
@@ -38,10 +38,10 @@ button:hover {
     transform: rotate(0);
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
 }
 html {
