@@ -1,0 +1,11 @@
+@mixin textStyle($font, $color, $background){
+    font-size: $font;
+    color: $color;
+    background-color: $background;
+}
+
+@mixin disflex($display, $justify-content, $align-items){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

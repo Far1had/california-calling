@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: "worksans";
+  src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  text-decoration: none;
+}
 
+p {
+  font-family: worksans;
+  color: #ffffff;
+}
+
+h4, h1 {
+  font-family: inter;
+  color: #ffffff;
+}
+
+.sec1__story, header, footer {
+  background-color: black;
+}
+
+.article, .sec1__story, header, footer {
+  font-size: 2em;
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
